@@ -1,0 +1,146 @@
+body 
+{
+    background-image: url("back2.jpg");
+}
+
+.nn
+{
+border: 4px solid;
+border-color:red;
+width:99%;
+height:100%;
+
+}
+
+
+.nn1
+{
+float:left;
+border: 2px solid ;
+border-color:red;
+width:100%;
+height:10%;
+border-radius:10px ;
+}
+
+
+
+.nn2
+{
+float:left;
+font-size:45px;
+color:white;
+border: 2px solid ;
+border-color:red;
+width:50%;
+height:80%;
+border-radius:10px 10px ;
+}
+
+
+.nn4
+{
+float:left;
+  background-image: url("3.jpg");
+float:left;
+font-size: 40px;
+color:red;
+border: 2px solid ;
+border-color:red;
+width:49%;
+height:60%;
+
+
+border-radius:10px 10px ;
+}
+
+
+.container
+{
+ background-image: url("back7.jpg");
+width:90%;
+height:70%;
+border-radius:10px 10px;
+margin:5%;
+color:blue;
+}
+
+.container2
+{
+background-image: url("3.jpg");
+width:70%;
+height:80%;
+color:red;
+border-radius:10px 10px;
+margin:5%;
+}
+
+.nn42
+{
+font-size: 40px;
+color:blue;
+background-image: url("back7.jpg");
+float:left;
+background-color:black;
+border: 2px solid ;
+border-color:red;
+width:49%;
+height:60%;
+border-radius:10px 10px ;
+}
+
+
+.nn3
+{
+
+float:left;
+border: 2px solid ;
+border-color:red;
+width:100%;
+height:29%;
+color:white;
+border-radius:10px ;
+}
+
+
+input[type=button] 
+{
+     color:red;
+	 font-size:30px;
+    width: 100%;  height: 100%;
+	background:black;
+}
+
+input[type=submit] 
+{
+     color:red;
+	 font-size:20px;
+     width: 40%;  height: 20%;
+	 background:white;
+}
+
+
+.inn
+{
+float:left;
+font-size: 40px;
+background-color:black;
+color:red;
+width:24%;
+height:100%;
+border-color:red;
+border: 2px solid ;
+}
+
+
+.inn33
+{
+float:left;
+font-size: 40px;
+background-color:black;
+color:red;
+width:24%;
+height:100%;
+border-color:red;
+border: 2px solid ;
+}

@@ -1,0 +1,142 @@
+<?php
+
+ 
+ $conn= mysql_connect("localhost","root","");
+ $db= mysql_select_db("wildlife",$conn);
+ 
+ 
+ if(isset($_GET['msg']))
+ {
+  $msg=$_GET['msg'];
+  echo $msg;
+ }
+
+ ?>
+
+ 
+
+ 
+ 
+<html>
+
+<head>
+   <title> welcome </title>
+   <link rel= "stylesheet" type="text/css" href="gallery.css">
+    
+
+	<script>
+	
+	 var count=0;
+	 var arr = ["1.jpg", "2.jpg","3.jpg", "4.jpg"];
+	 	 
+	 setInterval(function(){ pre();} ,3000);
+	 
+     function nxt()
+	 {
+      var path=document.getElementById("imageid").src; 
+		var index1=lastIndexOf("/");
+		var index2=lastIndexOf(".");
+		
+	   alert(path);
+	   
+	   var t=path.lastIndexOf("/");
+	   
+	   path[t+1]++;
+	   var kk=path[t+1]++;
+	   //alert(kk);
+	   alert(path);	 
+	 }
+	  
+	  
+  function pre()
+	 {
+	 count=count-1;
+	 
+	 if(count==-1)
+	 count=3;
+	 document.getElementById("imageid").src=arr[count];
+	// alert(arr[count]);
+	 }
+	  
+	  	  
+	
+	 
+	 function fun1()
+	 {
+	   var a=document.getElementById("n").value;
+       //alert("hiiiii");
+	 }
+	 
+	 function showDiv() 
+	   {
+        document.getElementById('welcomeDiv').style.display = "block";
+		document.getElementById('welcomeDiv2').style.display = "none";
+       }
+	   
+	    function showDiv2() 
+	   {
+        document.getElementById('welcomeDiv2').style.display = "block";
+		document.getElementById('welcomeDiv').style.display = "none";
+       }
+	</script>	
+</head> 
+
+
+
+
+
+<body>
+
+   <div class="nn">
+
+     
+	
+	  
+	  <a href="welcome_page.php" > <- Back </a>
+	  
+	  <div class="nn4" id="welcomeDiv" style="display:none;">
+	       
+		    <div class ="contain">
+            <img id="imageid" src="5.jpg" width="1000" height="500">
+			</div>
+      </div>
+	 
+	 
+	   <div class="nn3" id="welcomeDiv2" style="display:none;">
+	              <div class ="contain">
+          		   <img id="imageid" src="2.jpg" width="1000" height="500">
+				   </div>
+      </div>
+	  
+	 	 
+		 
+	  
+	  <div class="nn2">
+		<div class="inn">
+		   <input type="button" name="answer" width="48" height="48" value=" Corbett National Park, Uttarakhand" onMouseOver="showDiv2()"  /> 
+		</div> 
+		
+		<div class="inn">
+		   <input type="button" color="black" font="48" name="answer" value="Kaziranga National Park, Assam" onMouseOver="showDiv()"  /> 
+		</div>
+		
+		<div class="inn">
+		   <input type="button" color="black" font="48" name="answer" value="Bandipur National Park, Karnataka" onMouseOver="showDiv()"  /> 
+		</div>
+		
+		<div class="inn">
+		   <input type="button" color="black" font="48" name="answer" value="Sunderbans National Park" onMouseOver="showDiv2()"  /> 
+		</div>
+		
+      </div>
+	  
+   </div>
+
+</body>
+
+</html>
+
+ 
+ <?php	
+echo phpinfo();
+?>
